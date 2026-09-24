@@ -1100,7 +1100,7 @@ blockquote {
   width: 30px;
   height: 30px;
   padding: 0;
-  vertical-align: middle;
+  overflow: visible;
   fill: #7c7265;
 }
 .social-media-list a:hover .svg-icon {
