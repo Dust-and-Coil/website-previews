@@ -846,7 +846,7 @@ hr {
   color: #211f1b;
   text-decoration: none;
   text-align: left;
-  transition: border-color 120ms ease, transform 120ms ease;
+  transition: border-color 120ms ease;
 }
 .feature:visited {
   color: #211f1b;
@@ -854,7 +854,6 @@ hr {
 .feature:hover, .feature:focus {
   text-decoration: none;
   border-color: #7c7265;
-  transform: translateY(-1px);
 }
 .feature .state-swap {
   width: 120px;
@@ -879,7 +878,6 @@ hr {
 
 .feature--static:hover {
   border-color: #b9ae9d;
-  transform: none;
 }
 
 .feature__copy {
@@ -941,9 +939,6 @@ hr {
   }
   .feature {
     transition: none;
-  }
-  .feature:hover {
-    transform: none;
   }
 }
 .product-state {
