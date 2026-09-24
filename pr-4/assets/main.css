@@ -921,12 +921,16 @@ hr {
 }
 
 @media (hover: hover) {
+  .feature:hover .state-swap__on,
+  a:hover .state-swap__on,
   .state-swap:hover .state-swap__on,
   a:focus-visible .state-swap__on {
     opacity: 1;
   }
 }
 @media (hover: none) {
+  .feature:active .state-swap__on,
+  a:active .state-swap__on,
   .state-swap:active .state-swap__on {
     opacity: 1;
   }
