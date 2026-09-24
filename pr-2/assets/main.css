@@ -817,7 +817,8 @@ hr {
 .feature:visited {
   color: #211f1b;
 }
-.feature:hover {
+.feature:hover, .feature:focus {
+  text-decoration: none;
   border-color: #7c7265;
   transform: translateY(-1px);
 }
@@ -1068,10 +1069,19 @@ blockquote {
 
 .social-media-list {
   display: flex;
+  align-items: center;
   gap: 14px;
 }
-.social-media-list li {
+.social-media-list li,
+.social-media-list li + li {
   padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+.social-media-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 0;
 }
 .social-media-list .username {
@@ -1086,8 +1096,11 @@ blockquote {
   border: 0;
 }
 .social-media-list .svg-icon {
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  vertical-align: middle;
   fill: #7c7265;
 }
 .social-media-list a:hover .svg-icon {
