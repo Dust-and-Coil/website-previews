@@ -1029,4 +1029,9 @@ blockquote {
   fill: #285b78;
 }
 
+.instagram-embed {
+  margin: 32px auto;
+  max-width: 540px;
+}
+
 /*# sourceMappingURL=main.css.map */
