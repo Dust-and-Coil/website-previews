@@ -823,6 +823,7 @@ hr {
 }
 .feature .state-swap {
   width: 120px;
+  height: 120px;
   max-width: 120px;
   min-width: 0;
   justify-self: start;
@@ -832,11 +833,12 @@ hr {
   text-align: left;
   min-width: 0;
 }
-.feature img {
+.feature .state-swap img {
   display: block;
-  width: 100%;
+  width: 120px;
+  height: 120px;
   max-width: 100%;
-  height: auto;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -1044,12 +1046,13 @@ blockquote {
     grid-template-columns: 1fr;
   }
   .feature {
-    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-columns: 120px minmax(0, 1fr);
     gap: 12px;
   }
   .feature .state-swap {
-    width: 96px;
-    max-width: 96px;
+    width: 120px;
+    height: 120px;
+    max-width: 120px;
   }
   .product-state {
     max-width: 220px;
