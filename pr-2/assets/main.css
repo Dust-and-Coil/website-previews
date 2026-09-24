@@ -777,27 +777,33 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 18px;
-  align-items: stretch;
-  margin: 32px 0 18px;
+  align-items: start;
+  margin: 32px 0 32px;
 }
 
 .feature-row__col {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 .feature-row__col .section-label {
   margin-top: 0;
+  margin-bottom: 12px;
 }
-.feature-row__col .feature-list,
-.feature-row__col .feature {
-  height: 100%;
+.feature-row__col .feature-list {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .feature {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-  align-items: start;
-  justify-items: center;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  justify-items: stretch;
+  box-sizing: border-box;
+  width: 100%;
   margin: 0;
   padding: 16px;
   border: 1px solid #b9ae9d;
@@ -805,7 +811,7 @@ hr {
   background: #e2dacd;
   color: #211f1b;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
   transition: border-color 120ms ease, transform 120ms ease;
 }
 .feature:visited {
@@ -816,15 +822,18 @@ hr {
   transform: translateY(-1px);
 }
 .feature .state-swap {
-  max-width: 160px;
-  width: 50%;
+  width: 120px;
+  max-width: 120px;
   min-width: 0;
-  justify-self: center;
+  justify-self: start;
 }
 .feature .feature__copy {
-  justify-items: center;
+  justify-items: start;
+  text-align: left;
+  min-width: 0;
 }
 .feature img {
+  display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -898,17 +907,19 @@ hr {
 }
 .product-state {
   max-width: 260px;
-  width: 50%;
+  width: 100%;
   min-width: 0;
   margin: 32px auto;
   text-align: center;
 }
 .product-state .state-swap {
   width: 100%;
-  max-width: 100%;
+  max-width: 260px;
   min-width: 0;
+  margin: 0 auto;
 }
 .product-state img {
+  display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -1033,10 +1044,14 @@ blockquote {
     grid-template-columns: 1fr;
   }
   .feature {
-    grid-template-columns: 1fr;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .feature .state-swap {
+    width: 96px;
+    max-width: 96px;
   }
   .product-state {
-    width: 60%;
     max-width: 220px;
   }
 }
