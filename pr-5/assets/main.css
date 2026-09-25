@@ -727,9 +727,9 @@ a:visited {
   text-decoration: underline;
 }
 a:hover {
-  color: #3d8fb5;
+  color: #1f6b3a;
   text-decoration: underline;
-  text-decoration-color: #3d8fb5;
+  text-decoration-color: #1f6b3a;
 }
 
 .site-title,
@@ -756,7 +756,7 @@ a:hover {
 }
 
 .site-nav .page-link:hover {
-  color: #3d8fb5;
+  color: #1f6b3a;
 }
 
 hr {
