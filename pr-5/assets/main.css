@@ -717,13 +717,13 @@ h1, h2, h3 {
 }
 
 a {
-  color: #285b78;
+  color: #1d4063;
   text-decoration: underline;
-  text-decoration-color: rgba(40, 91, 120, 0.55);
+  text-decoration-color: rgba(29, 64, 99, 0.7);
   text-underline-offset: 3px;
 }
 a:visited {
-  color: rgb(11.6862745098%, 26.5862745098%, 35.0588235294%);
+  color: rgb(9.1069240196%, 20.0980392157%, 31.0891544118%);
   text-decoration: underline;
 }
 a:hover {
