@@ -723,7 +723,7 @@ a {
   text-underline-offset: 3px;
 }
 a:visited {
-  color: rgb(9.1069240196%, 20.0980392157%, 31.0891544118%);
+  color: #17334f;
   text-decoration: underline;
 }
 a:hover {
