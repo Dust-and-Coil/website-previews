@@ -1193,18 +1193,4 @@ blockquote {
   color: #665f55;
 }
 
-details.release {
-  padding: 10px 14px;
-  border: 1px solid #b9ae9d;
-  border-radius: 10px;
-  background: #f7f2e9;
-}
-details.release summary {
-  margin-bottom: 0;
-  cursor: pointer;
-}
-details.release[open] summary {
-  margin-bottom: 8px;
-}
-
 /*# sourceMappingURL=main.css.map */
